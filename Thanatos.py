@@ -3,7 +3,7 @@ from discord.ext import commands
 import discord
 import builtins
 
-bot = commands.Bot(command_prefix="re!")
+bot = commands.Bot(command_prefix="sq!")
 
 process = sp.Popen(['python3', 'Squid_Bot.py'])
 authorized_roles = [651783488034570240, 651779641572458502]
