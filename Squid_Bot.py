@@ -39,11 +39,8 @@ async def on_message_edit(before, after):
         embed.add_field(name="Username", value=after.author)
         embed.add_field(name="UserId", value=after.author.id, inline=False)
         embed.add_field(name="Channel", value="<#%d>" % before.channel.id, inline=False)
-        print(before.content)
         embed.add_field(name="Before", value=before.content, inline=False)
-        print(after.content)
         embed.add_field(name="After", value=after.content, inline=False)
-        print(embed)
         channel = bot.get_channel(log_channel_id)
         await channel.send(embed=embed)
 
